@@ -12,7 +12,7 @@ const MARGIN_TOP = 1/6;
 const MARGIN_BOTTOM = 2/3;
 const SPACE_SCALE = 2/5;
 const NEW_LINE_SCALE = 1.5;
-const TEXT_SIZE = 18;
+const TEXT_SIZE = 36;
 const BLINK_RANGE = 40;
 const NEW_LINE_ODDS = 10;
 
@@ -94,53 +94,6 @@ function draw() {
       }
     break;
   }
-  // switch (currentWord.toLowerCase()) {
-  //
-  //   // Adds the love effect
-  //   case 'love':
-  //     // Gives every word the special effect
-  //     if (specialEffect != 'love') {
-  //       specialEffect = 'love';
-  //       for (var i = 0; i < wordArray.length; i ++) {
-  //         wordArray[i].specialEffect = 'love';
-  //         wordArray[i].targetX = newWord.x;
-  //         wordArray[i].targetY = newWord.y;
-  //       }
-  //     }
-  //     specialEffect = 'love';
-  //     break;
-  //
-  //   // Adds the death effect
-  //   case 'death':
-  //   case 'die':
-  //   case 'dead':
-  //   case 'dying':
-  //     if (specialEffect != 'death') {
-  //       specialEffect = 'death';
-  //       for (var i = 0; i < wordArray.length; i ++) {
-  //         wordArray[i].specialEffect = 'death';
-  //       }
-  //     }
-  //
-  //     // Checks if the array can be deleted
-  //     var canDelete = true;
-  //     for (var i = 0; i < wordArray.length; i ++) {
-  //       if (wordArray[i].y < height){
-  //        canDelete = false
-  //       }
-  //     }
-  //
-  //     // Deletes the word array
-  //     if (canDelete === true) {
-  //       console.log(1);
-  //       wordArray = [];
-  //       cursorPosition.x = cursorPosition.defaultX;
-  //       cursorPosition.y = cursorPosition.defaultY;
-  //       specialEffect = null;
-  //     }
-  //   break;
-  // }
-
 
   // Draws the current word being typed
   if (currentWord.length > 0) {
